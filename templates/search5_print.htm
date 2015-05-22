@@ -1,0 +1,319 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<title>{$pagetitle}</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+		<!--[if IE]>
+			<link REL="stylesheet" href="styles/defaultIE.css" type="text/css">
+			{BEGIN IEcssFiles}
+			<link REL="stylesheet" href="{$stylepathIE}" type="text/css">
+			{END IEcssFiles}
+		<![endif]-->
+	</head>
+	
+	<body class="{$stylename}" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<table   cellpadding="0" class="runner-toptable">
+			<tr class="runner-header">
+				<td class="runner-top" colspan=3>
+					
+
+
+
+
+				</td>
+			</tr>
+			<tr class="runner-body">
+				
+				<td class="runner-left {$blockclass_left}" >
+					
+				</td>	
+				
+				<td class="runner-center {$blockclass_center}">
+					
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+{BEGIN page}
+<h1>Search5</h1>
+<span>
+{BEGIN page_number}
+Page {$pageno} of {$maxpages} 
+{END page_number}
+</span>
+
+	<div class="runner-s-grid">	
+	<table class="runner-c runner-c-grid" cellpadding="0">
+		<thead>
+		{BEGIN grid_header}
+		<tr class="runner-toprow style1">
+			<td class="runner-cl"><img src="images/spacer.gif"></td>
+			{BEGIN record_header}
+					{BEGIN idttl_actions_fieldheadercolumn}
+<td class="runner-cc">
+	{BEGIN idttl_actions_fieldheader}
+	<b>Idttl Actions</b>
+	{END idttl_actions_fieldheader}
+</td>
+{END idttl_actions_fieldheadercolumn}
+	{BEGIN FileNumber_fieldheadercolumn}
+<td class="runner-cc">
+	{BEGIN FileNumber_fieldheader}
+	<b>File Number</b>
+	{END FileNumber_fieldheader}
+</td>
+{END FileNumber_fieldheadercolumn}
+	{BEGIN NameOfSeller_fieldheadercolumn}
+<td class="runner-cc">
+	{BEGIN NameOfSeller_fieldheader}
+	<b>Name Of Seller</b>
+	{END NameOfSeller_fieldheader}
+</td>
+{END NameOfSeller_fieldheadercolumn}
+	{BEGIN NameOfBuyer_fieldheadercolumn}
+<td class="runner-cc">
+	{BEGIN NameOfBuyer_fieldheader}
+	<b>Name Of Buyer</b>
+	{END NameOfBuyer_fieldheader}
+</td>
+{END NameOfBuyer_fieldheadercolumn}
+	{BEGIN NameOfBroker_fieldheadercolumn}
+<td class="runner-cc">
+	{BEGIN NameOfBroker_fieldheader}
+	<b>Name Of Broker</b>
+	{END NameOfBroker_fieldheader}
+</td>
+{END NameOfBroker_fieldheadercolumn}
+	{BEGIN BrokerCo_fieldheadercolumn}
+<td class="runner-cc">
+	{BEGIN BrokerCo_fieldheader}
+	<b>Broker Co</b>
+	{END BrokerCo_fieldheader}
+</td>
+{END BrokerCo_fieldheadercolumn}
+	{BEGIN PropAddress_fieldheadercolumn}
+<td class="runner-cc">
+	{BEGIN PropAddress_fieldheader}
+	<b>Prop Address</b>
+	{END PropAddress_fieldheader}
+</td>
+{END PropAddress_fieldheadercolumn}
+	{BEGIN City_fieldheadercolumn}
+<td class="runner-cc">
+	{BEGIN City_fieldheader}
+	<b>City</b>
+	{END City_fieldheader}
+</td>
+{END City_fieldheadercolumn}
+	{BEGIN MortgageBy_fieldheadercolumn}
+<td class="runner-cc">
+	{BEGIN MortgageBy_fieldheader}
+	<b>Mortgage By</b>
+	{END MortgageBy_fieldheader}
+</td>
+{END MortgageBy_fieldheadercolumn}
+	{BEGIN Client_A_fieldheadercolumn}
+<td class="runner-cc">
+	{BEGIN Client_A_fieldheader}
+	<b>Client A</b>
+	{END Client_A_fieldheader}
+</td>
+{END Client_A_fieldheadercolumn}
+	{BEGIN Client_B_fieldheadercolumn}
+<td class="runner-cc">
+	{BEGIN Client_B_fieldheader}
+	<b>Client B</b>
+	{END Client_B_fieldheader}
+</td>
+{END Client_B_fieldheadercolumn}
+	{BEGIN Tenant_fieldheadercolumn}
+<td class="runner-cc">
+	{BEGIN Tenant_fieldheader}
+	<b>Tenant</b>
+	{END Tenant_fieldheader}
+</td>
+{END Tenant_fieldheadercolumn}
+	{BEGIN Matter_fieldheadercolumn}
+<td class="runner-cc">
+	{BEGIN Matter_fieldheader}
+	<b>Matter</b>
+	{END Matter_fieldheader}
+</td>
+{END Matter_fieldheadercolumn}
+		
+			{END record_header}
+			<td class="runner-cr"><img src="images/spacer.gif"></td>
+			{BEGIN endrecordheader_block}
+			<td class="runner-cs">&nbsp;</td>
+			{END endrecordheader_block}
+		</tr>
+	{END grid_header}
+		</thead>
+		<tbody>	
+		{BEGIN grid_row}
+	<tr class="runner-row style1" {$rowattrs} {$rowstyle} {$rowstyle}>
+		<td class="runner-cl"></td>
+		{BEGIN grid_record}
+				{BEGIN idttl_actions_fieldcolumn}
+<td  class="runner-cc {$idttl_actions_class}" {$idttl_actions_style}>
+	{$idttl_actions_value}
+</td>
+{END idttl_actions_fieldcolumn}
+	{BEGIN FileNumber_fieldcolumn}
+<td  class="runner-cc {$FileNumber_class}" {$FileNumber_style}>
+	{$FileNumber_value}
+</td>
+{END FileNumber_fieldcolumn}
+	{BEGIN NameOfSeller_fieldcolumn}
+<td  class="runner-cc {$NameOfSeller_class}" {$NameOfSeller_style}>
+	{$NameOfSeller_value}
+</td>
+{END NameOfSeller_fieldcolumn}
+	{BEGIN NameOfBuyer_fieldcolumn}
+<td  class="runner-cc {$NameOfBuyer_class}" {$NameOfBuyer_style}>
+	{$NameOfBuyer_value}
+</td>
+{END NameOfBuyer_fieldcolumn}
+	{BEGIN NameOfBroker_fieldcolumn}
+<td  class="runner-cc {$NameOfBroker_class}" {$NameOfBroker_style}>
+	{$NameOfBroker_value}
+</td>
+{END NameOfBroker_fieldcolumn}
+	{BEGIN BrokerCo_fieldcolumn}
+<td  class="runner-cc {$BrokerCo_class}" {$BrokerCo_style}>
+	{$BrokerCo_value}
+</td>
+{END BrokerCo_fieldcolumn}
+	{BEGIN PropAddress_fieldcolumn}
+<td  class="runner-cc {$PropAddress_class}" {$PropAddress_style}>
+	{$PropAddress_value}
+</td>
+{END PropAddress_fieldcolumn}
+	{BEGIN City_fieldcolumn}
+<td  class="runner-cc {$City_class}" {$City_style}>
+	{$City_value}
+</td>
+{END City_fieldcolumn}
+	{BEGIN MortgageBy_fieldcolumn}
+<td  class="runner-cc {$MortgageBy_class}" {$MortgageBy_style}>
+	{$MortgageBy_value}
+</td>
+{END MortgageBy_fieldcolumn}
+	{BEGIN Client_A_fieldcolumn}
+<td  class="runner-cc {$Client_A_class}" {$Client_A_style}>
+	{$Client_A_value}
+</td>
+{END Client_A_fieldcolumn}
+	{BEGIN Client_B_fieldcolumn}
+<td  class="runner-cc {$Client_B_class}" {$Client_B_style}>
+	{$Client_B_value}
+</td>
+{END Client_B_fieldcolumn}
+	{BEGIN Tenant_fieldcolumn}
+<td  class="runner-cc {$Tenant_class}" {$Tenant_style}>
+	{$Tenant_value}
+</td>
+{END Tenant_fieldcolumn}
+	{BEGIN Matter_fieldcolumn}
+<td  class="runner-cc {$Matter_class}" {$Matter_style}>
+	{$Matter_value}
+</td>
+{END Matter_fieldcolumn}
+
+		{END grid_record}
+		<td class="runner-cr"></td>
+		{BEGIN endrecord_block}
+		<td class="runner-cs">&nbsp;</td>
+		{END endrecord_block}
+	</tr>
+{END grid_row}
+										
+								<tr class="runner-bottomrow style1">
+									<td class="runner-cl"><img src="images/spacer.gif"></td>
+									{BEGIN record_footer}
+									{BEGIN idttl_actions_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END idttl_actions_fieldfootercolumn}
+{BEGIN FileNumber_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END FileNumber_fieldfootercolumn}
+{BEGIN NameOfSeller_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END NameOfSeller_fieldfootercolumn}
+{BEGIN NameOfBuyer_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END NameOfBuyer_fieldfootercolumn}
+{BEGIN NameOfBroker_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END NameOfBroker_fieldfootercolumn}
+{BEGIN BrokerCo_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END BrokerCo_fieldfootercolumn}
+{BEGIN PropAddress_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END PropAddress_fieldfootercolumn}
+{BEGIN City_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END City_fieldfootercolumn}
+{BEGIN MortgageBy_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END MortgageBy_fieldfootercolumn}
+{BEGIN Client_A_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END Client_A_fieldfootercolumn}
+{BEGIN Client_B_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END Client_B_fieldfootercolumn}
+{BEGIN Tenant_fieldfootercolumn}
+<td class="runner-cc "></td>
+{END Tenant_fieldfootercolumn}
+{BEGIN Matter_fieldfootercolumn}
+<td class="runner-cc runner-clast"></td>
+{END Matter_fieldfootercolumn}
+
+									{END record_footer}
+									<td class="runner-cr"><img src="images/spacer.gif"></td>
+									{BEGIN endrecordtotals_block}
+									<td class="runner-cs"></td>
+									{END endrecordtotals_block}
+								</tr>
+
+		</tbody>
+	</table>
+</div>	
+{END page}
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+				</td>	
+
+				<td class="runner-right {$blockclass_right}">
+					
+				</td>	
+			</tr>
+			<tr class="runner-footer">
+				<td class="runner-bottom" colspan=3>
+					<!--%%bottom%%-->
+				</td>
+			</tr>
+		</table>
+		{$footer}
+	{END body}
+	</body>
+</html>
