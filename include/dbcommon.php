@@ -28,7 +28,8 @@ error_reporting(E_ALL ^ E_NOTICE);
 /// include php specific code
 include("phpfunctions.php");
 
-$useOldMysqlLib = (bool)1;
+// $useOldMysqlLib = (bool)1;
+$useOldMysqlLib = (bool)0;
 
 
 $host="localhost";
